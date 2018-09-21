@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group android:checkableBehavior="single">
+
+        <item  android:id="@+id/item_Home"
+            android:title="@string/item_Home"
+            app:showAsAction="always"
+            android:visible="true"
+            android:icon="@mipmap/home"
+            android:enabled="true" />
+
+
+
+        <item  android:id="@+id/item_Myorders"
+            android:icon="@mipmap/order"
+            android:title="@string/item_Myorders"/>
+
+        <item  android:id="@+id/item_Card"
+            android:icon="@mipmap/order"
+            android:title="@string/card"/>
+
+        <item android:id="@+id/item_Notif"
+            android:title="@string/item_Notif"
+            android:icon="@mipmap/notif"
+            android:visible="true"
+            android:enabled="true"
+            android:checkable="true" />
+
+
+
+        <item android:id="@+id/item_about"
+            android:title="@string/about"
+            android:icon="@mipmap/about"
+            android:visible="true"
+            android:enabled="true"
+            android:checkable="true" />
+
+        <item android:id="@+id/item_terms"
+            android:title="@string/txt_terms"
+            android:icon="@mipmap/condition"
+            android:visible="true"
+            android:enabled="true"
+            android:checkable="true" />
+
+        <item android:id="@+id/item_friends"
+            android:title="@string/callfriends"
+            android:icon="@mipmap/share"
+            android:visible="true"
+            android:enabled="true"
+            android:checkable="true" />
+
+        <item android:id="@+id/item_contac"
+            android:title="@string/item_contact"
+            android:icon="@mipmap/callus"
+            android:visible="true"
+            android:enabled="true"
+            android:checkable="true" />
+        <item android:id="@+id/item_logout"
+            android:title="@string/sgnout"
+            android:icon="@mipmap/logout"
+            android:visible="true"
+            android:enabled="true"
+            android:checkable="true" />
+
+
+
+    </group>
+
+
+
+</menu>

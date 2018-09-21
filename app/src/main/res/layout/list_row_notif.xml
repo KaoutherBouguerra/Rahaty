@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+
+    android:paddingStart="5dp"
+    android:id="@+id/list_color"
+    android:paddingLeft="5dp">
+    <!-- android:background="@drawable/list_row_selector"-->
+
+    <!-- Thumbnail Image -->
+    <ImageView
+        android:id="@+id/thumbnail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="5dp"
+        android:padding="10dp"
+        android:layout_centerVertical="true"
+        android:src="@mipmap/notification"
+        android:layout_alignParentLeft="true" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/thumbnail"
+        android:layout_toRightOf="@+id/thumbnail"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/linearLayout1"
+            android:layout_marginBottom="6dp">
+            <TextView
+                android:id="@+id/txt_order_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="4dp"
+                android:layout_marginRight="4dp"
+
+                android:ellipsize="end"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:text="@string/accept_order"
+                android:textColor="@color/colorPrimary"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/red"
+                android:layout_marginEnd="4dp"
+                android:layout_marginRight="4dp"
+                android:textSize="12sp"
+                android:text="567"/>
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="6dp"
+                android:layout_marginRight="6dp"
+
+
+
+                android:ellipsize="end"
+
+                android:gravity="center"
+                android:textStyle="bold"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:text="@string/from_provider"
+                android:textColor="@color/colorPrimary"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+
+        <!-- Rating -->
+
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linearLayout1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:text="@string/delete_order"
+                android:id="@+id/txt_date"
+                android:textColor="@color/color_text_dark"
+                android:textSize="12sp"
+                />
+
+            <TextView
+                android:id="@+id/txt_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="@string/time"
+                android:textColor="@color/color_text_dark"
+                android:textSize="12sp"
+               />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

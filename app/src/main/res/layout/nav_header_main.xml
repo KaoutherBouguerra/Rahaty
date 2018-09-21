@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@color/colorPrimary"
+    android:id="@+id/headerView"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark"
+        android:layout_below="@+id/img_settings"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <art4muslim.macbook.rahatycustomer.utils.circularimageview.CircularImageView
+            android:id="@+id/imDriver"
+            android:layout_width="76dp"
+            android:layout_height="76dp"
+            android:background="@drawable/user_profile_image_background"
+            android:elevation="4dp"
+            android:padding="10dp"
+            />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/activity_drawable_padding"
+            android:paddingStart="@dimen/activity_drawable_padding"
+            android:text="@string/txt_hello"
+            android:textStyle="bold"
+
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            android:paddingLeft="@dimen/activity_drawable_padding"
+            android:paddingStart="@dimen/activity_drawable_padding"
+            android:id="@+id/linear_name">
+            <TextView
+                android:id="@+id/txtName"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="6dp"
+                android:layout_marginEnd="6dp"
+                android:text="Mohamed talel" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/profile"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/bg_langue"
+        android:id="@+id/img_settings"
+        android:layout_marginRight="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:textColor="@android:color/white"
+        android:text="EN"
+        android:paddingTop="6dp"
+        android:paddingBottom="6dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>

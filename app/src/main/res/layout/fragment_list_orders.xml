@@ -1,0 +1,54 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="art4muslim.macbook.rahatycustomer.fragments.orders.ListOrdersFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        android:gravity="center"
+        android:id="@+id/line1"
+        android:weightSum="1"
+        android:paddingStart="26dp"
+        android:paddingRight="26dp"
+        android:paddingEnd="26dp"
+        android:paddingLeft="26dp"
+        android:background="@color/colorPrimaryDark"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:padding="10dp"
+            android:text="@string/now_orders"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:background="@drawable/round_left_rect_shape_b"
+            android:id="@+id/txt_current"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorAccent"
+            android:padding="10dp"
+            android:gravity="center"
+            android:layout_weight="0.5"
+            android:background="@drawable/round_right_rect_shape_w"
+            android:text="@string/last_orders"
+            android:id="@+id/txt_last"/>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+
+        android:layout_below="@+id/line1">
+
+    </FrameLayout>
+
+</RelativeLayout>

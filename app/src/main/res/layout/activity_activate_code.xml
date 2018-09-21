@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:id="@+id/activity_choose_language"
+    android:background="@mipmap/port"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="false"
+    android:layout_height="match_parent">
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="26dp"
+        android:visibility="gone"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:indeterminateTint="@android:color/white" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginStart="40dp"
+
+        android:layout_marginTop="80dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/linearLayout4">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:text="@string/text_register"
+            android:layout_marginBottom="10dp"
+            android:textSize="18dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:text="@string/txt_msg"
+            android:layout_marginBottom="30dp"
+
+            android:textSize="18dp"/>
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="14dp"
+            android:paddingTop="14dp"
+            android:paddingRight="16dp"
+            android:paddingEnd="16dp"
+            android:paddingLeft="16dp"
+            android:paddingStart="16dp"
+            android:hint="@string/text_code"
+            android:background="@drawable/full_rectangle_white"
+            android:inputType="textPassword"
+            android:id="@+id/etCode"
+            android:layout_marginBottom="11dp"  />
+
+
+        <Button
+            android:text="@string/txt_next"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="20dp"
+            android:textAllCaps="false"
+            android:background="@drawable/rectangle_orange"
+            android:id="@+id/btn_signup" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>
